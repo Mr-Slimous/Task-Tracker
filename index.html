@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<script
+      src="https://kit.fontawesome.com/1935d064dd.js"
+      crossorigin="anonymous"
+    ></script>E html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+   
+    <!-- CSS only -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="main">
+      <div class="container">
+        <!-- Task Header -->
+        <div class="task-header">
+          <div class="top">
+            <div class="time">
+              <time class="current-date">10 Jun, 2021</time>
+              <time class="current-time">11:00 PM</time>
+            </div>
+            <button class="clear" id="clear-btn">Clear Tasks</button>
+          </div>
+
+          <h1>Task Tracker</h1>
+          <p class="total-task">12 Tasks</p>
+          <div class="add-task">
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <!-- Task Form -->
+        <div class="task-form">
+          <form action="">
+            <input type="date" id="task-date" />
+            <input type="text" id="task-text" placeholder="Add a task..." />
+            <button type="submit" id="task-btn">Add Task</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="task-section">
+      <div class="container">
+        <div class="task-list">
+          <div class="tasks">
+            <div class="task">
+              <div class="task-content">
+                <p class="task-date">2021-07-08</p>
+                <span class="task-index">1</span>
+                <p class="task-text">Do something...</p>
+              </div>
+              <div class="task-icons">
+                <i class="fas fa-check"></i>
+                <i class="fas fa-edit"></i>
+                <i class="fas fa-trash-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal/Popup -->
+    <div class="confirm close-modal">
+      <div class="confirm-modal">
+        <div class="header">
+          <span class="title">Delete this item</span>
+          <button class="close">&times</button>
+        </div>
+        <div class="content">You are about to delete this item!</div>
+        <div class="buttons">
+          <button class="btn btn-ok">Ok</button>
+          <button class="btn btn-cancel">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="date.js"></script>
+    <script src="confirm.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
